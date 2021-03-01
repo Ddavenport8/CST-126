@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('mainBackground.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+h1 {
+font-size:60px;
+}
+a {
+font-size: 32px;
+}
+button{
+font-size:32px;
+border-radius: 8px;
+margin:20px;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Login Form</title>
+</head>
+<body>
+<form action="loginHandler.php" method = POST>
+  <div class="container">
+    <h1>Login</h1>
+    <p>Please Log In.</p>
+    <hr>
+    
+	<label for="Username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="Username" id="UN"><br><br>
+    
+	<label for="Password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="Password" id="PW"><br><br>
+    
+	<button type="submit" class="login.html">Login</button>
+</div>
+</form>
+<br><br><br><br><br>
+<button onclick="location.href='index.html'" type = "button">Main Menu</button>
+</body>
+</html>
