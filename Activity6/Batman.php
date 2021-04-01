@@ -4,7 +4,7 @@ class Batman extends SuperHero
 {
 	public function Batman()
 	{
-		$name = "Batman";
+		$this->setName("Batman");
 		$this->setHealth(rand(1,1000));
 	}
 }

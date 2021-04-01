@@ -1,10 +1,12 @@
 <?php
 require_once 'SuperHero.php';
-require_once 'Batman.php.php';
+require_once 'Batman.php';
 require_once 'Superman.php';
 $superman = new Superman();
 $batman = new Batman();
 
+echo "Superman has joined the fight with " . $superman->getHeatlh() . " hp <br>";
+echo "Batman has joined the fight with " . $batman->getHeatlh() . " hp <br>";
 while(!$superman->isDead() && !$batman->isDead())
 {
 	$superman->Attack($batman);

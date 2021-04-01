@@ -24,11 +24,10 @@ class SuperHero
 		{
 			$this->setHealth(0);
 			$this->isDead = true;
-			echo $this->name . " Died";
 		}
 		else 
 		{
-			echo $this->name . " took " . $Damage . " points of damage, and now has " . $this->health . " health left";
+			echo $this->name . " took " . $Damage . " points of damage, and now has " . $this->health . " health left <br>";
 		}
 	}
 	
@@ -43,6 +42,10 @@ class SuperHero
 	public function setHealth($newHealth)
 	{
 		$health = $newHealth;
+	}
+	public function setName($NewName)
+	{
+		$this->name = $NewName;
 	}
 }
 
