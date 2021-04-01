@@ -6,15 +6,15 @@ class SuperHero
 	Private $health;
 	Private $isDead = false;
 	
-	public function Constructor()
+	public function SuperHero()
 	{
-		$name = "Default";
-		$health = 0;
+		$this->name = "Default";
+		$this->health = 0;
 	}
 	
 	public function Attack(SuperHero $Oppenent)
 	{
-		$Oppenent->setHealth($Oppenent->DetermineHealth(rand(1,10)));
+		$Oppenent->DetermineHealth(rand(1,10));
 	}
 	
 	public function DetermineHealth($Damage)
@@ -25,10 +25,8 @@ class SuperHero
 			$this->setHealth(0);
 			$this->isDead = true;
 		}
-		else 
-		{
-			echo $this->name . " took " . $Damage . " points of damage, and now has " . $this->health . " health left <br>";
-		}
+		echo $this->name . " took " . $Damage . " points of damage, and now has " . $this->health . " health left <br>";
+		
 	}
 	
 	public function isDead()
@@ -41,7 +39,7 @@ class SuperHero
 	}
 	public function setHealth($newHealth)
 	{
-		$health = $newHealth;
+		$this->health = $newHealth;
 	}
 	public function setName($NewName)
 	{

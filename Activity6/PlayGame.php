@@ -17,9 +17,9 @@ while(!$superman->isDead() && !$batman->isDead())
 }
 if($superman->isDead())
 {
-	echo "Superman has died. Batman wins with" . $batman->getHeatlh(); 
+	echo "Superman has died. Batman wins with " . $batman->getHeatlh() . " health remaining";
 }
 else 
 {
-	echo "Batman has died. Superman wins with" . $superman->getHeatlh();
+	echo "Batman has died. Superman wins with " . $superman->getHeatlh() . " health remaining";
 }
